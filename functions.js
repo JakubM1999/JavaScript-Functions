@@ -97,6 +97,9 @@ console.log("Cercie's contact added ",arrayOfContacts)
 
 // 2.remove(email)-Remove corresponding contact
 //seperator
+
+/* I made this with help of one of the students so this function is mostly build on
+loops and then basic if...else method.*/
 console.log("----------------------------------------------------")
 
 function removeEmail(arrayOfContacts, email, value) {
@@ -127,6 +130,10 @@ console.log(arrayOfContacts)
 /* 3.Update/Increment the corresponding contact’s data with the
 information that’s passed in / Email address is the unique identifier*/
 
+/*This one is a map function that I used for the first time and I think that it went
+pretty well basicly this function is letting you find specific property in one of the
+object and then let's you update it. I'm sure that it has a lot more usess though*/
+
 console.log("----------------------------------------------------")
 
 const editEmail = arrayOfContacts.map((item) =>{
@@ -141,6 +148,11 @@ const editEmail = arrayOfContacts.map((item) =>{
 console.log ("Bran's contact has been updated. ",editEmail)
 
 // 4.Output information for the corresponding contact.
+
+/*I did have many ideas for this one but I figured out that I could use the code
+that I wrote in the first question so I used that to output the error then again 
+basic if...else.*/
+
 console.log("----------------------------------------------------")
 /*
 if(contact not fount)
@@ -172,6 +184,10 @@ getContact ("sansa@gmail.com")
 
 
 // 5. List all contacts available in the contact list
+/* At this piont in this project I was more confident in my skills to make functions so 
+this one was pretty easy all I did is a basic for loop and then combined it with
+keys and value which outbut key and vaules of the object this is a very handy tool 
+in my opinion.*/
 console.log("----------------------------------------------------")
 
 var listAll = () => {
@@ -185,6 +201,8 @@ var listAll = () => {
 listAll();
 
 // 6. Remove all contacts from the list
+/*This was also an easy one this is a function that makes length of the array 0 which
+means that it zero's out whole array and there for clearing whole contact list*/
 const clearAll = () => {
     arrayOfContacts.length = 0;
     console.log("The List has been cleard");
